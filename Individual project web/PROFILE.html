@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<head>
+	<title>PROFILE</title>
+	
+<style>
+body {
+    font-family: "Lato", Helvetica sans-serif;
+    transition: background-color .5s;
+	background : white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+
+
+
+.row {  
+	display: flex;
+}
+.side {
+    flex: 30%;
+    background-color: #FFB347;
+    padding: 40px;
+}
+.main {   
+	
+    flex: 70%;
+    background-color: white;
+    padding: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/WELCOME%20PAGE.html">Homepage</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PROFILE.html">Profile</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/RESUME.html">Resume</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PORTFOLIO.html">Portfolio</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/CONTACT.html">Contact</a>
+</div>
+
+<div id="main">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+		document.body.style.backgroundColor = "#FFE4B5";
+	}
+	</script>
+
+	<!-- Slide Show -->
+	<section>
+		<img class="mySlides" src="a.jpg"
+		style="width:100%" align="center">
+		<img class="mySlides" src="l.jpg"
+		style="width:100%" align="center">
+		<img class="mySlides" src="i.jpg"
+		style="width:100%" align="center">
+	</section>
+	
+	<script>
+	// Automatic Slideshow - change image every 3 seconds
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000);
+	}
+	</script>
+
+	<section style="max-width:100%" >
+		<br><br><br>
+			<p align="center" style="Nirmala UI;font-size:250%;">P R O F I L E</p>
+			<p align="center" style="font-family:courier;font-size:140%;"><i>About Me</i></p>
+			<table style="width:60%" align="center">
+			<tr>
+				<td><p style="font-family:courier;font-size:110%;text-align:justify;" >I am Intan Nurfarhanis.
+				A fresh graduate student from UiTM Johor.I have experiences in involving myself in the multimedia field.
+				My experiences consists of the entry in the Landmark competition held by UiTM Johor and Pasir Gudang as well
+				as the multimedia project of my courses. I would love to involve more in the world of graphic design
+				and photography to pour every knowledge that I get from learning in my University and contribute 
+				something big in the place that I step on. I am also experiencing in developing a website and writing coding
+				in different languages.</p>
+				</td>
+			<tr>
+			</table>
+			<br><br><br><br>
+	</section>
+</div>
+
+<hr color="orange"></hr>
+<br>
+	<div class="row">
+		<div class="side">
+			<table style="font-family:Tw Cen MT Condensed; font-size:150%;">
+			<tr>
+				<td><h2>About Me</h2></td>
+			</tr>
+			<tr>
+				<td>NAME</td>
+			</tr>
+			<tr>
+				<td>AGE</td>
+			</tr>
+			<tr>
+				<td>GENDER</td>
+			</tr>
+			<tr>
+				<td>IC NUMBER</td>
+			</tr>
+			<tr>
+				<td>ADDRESS
+			</tr>
+			<tr>
+				<td>MARITAL STATUS</td>
+			</tr>
+			<tr>
+				<td>OCCUPATION</td>
+			</tr>
+			</table>
+		</div>
+		<div class="main">
+			<table style="font-family:Tw Cen MT Condensed; font-size:150%; color:#FF8C00;">
+			<tr>
+				<td><h2>&#9776;</h2></td>
+			</tr>
+			<tr>
+				<td>INTAN NURFARHANIS BINTI MOHD NOOR</td>
+			</tr>
+			<tr>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>FEMALE</td>
+			</tr>
+			<tr>
+				<td>981130-02-6463</td>
+			</tr>
+			<tr>
+				<td>TAMAN CAHAYA BAKTI, 68000 PASIR GUDANG, JOHOR</td>
+			</tr>
+			<tr>
+				<td>SINGLE</td>
+			</tr>
+			<tr>
+				<td>--</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+<br><br>
+
+<hr color="orange"></hr>
+
+<br><br><br>
+
+<img src="tumb.jpg" style="width:100%">
+</body>
+</html>

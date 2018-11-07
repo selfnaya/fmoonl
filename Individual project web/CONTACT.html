@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>CONTACT</title>
+<style>
+body {
+    margin: 0;
+    font-family: "Lato", Helvetica sans-serif;;
+}
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+input[type=submit] {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 11px 26px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+  color: white;
+}
+
+th {    
+    border: white;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/WELCOME%20PAGE.html">Homepage</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PROFILE.html">Profile</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/RESUME.html">Resume</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PORTFOLIO.html">Portfolio</a>
+  <a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/CONTACT.html">Contact</a>
+</div>
+
+<div id="main">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+		document.body.style.backgroundColor = "white";
+	}
+	</script>
+	
+</div>
+
+<!-- The Contact Section -->
+  <div class="myContact" style="max-width:100%" id="contact">
+    <p align="center" style="font-family:Nirmala UI;font-size:250%">CONTACT</p>
+    <p align="center" style="font-family:Nirmala UI"><i>Interested in hiring me?</i></p>
+	<br><br><br><br>
+	<table style="width:50%; font-family:TW Cen MT Condensed; font-size:150%; float:left">
+		<tr>
+			<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#10132; Pasir Gudang, Malaysia</td>
+		</tr>
+		<tr>
+			<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9990; PHONE : 013-653-0001</td>
+		</tr>
+		<tr>
+			<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9993; EMAIL : self.farhanis@gmail.com</td>
+		</tr>
+	</table>
+	<form action="" method="get">	
+		<table style="width:30%; font-family:Tw Cen MT Condensed;">
+			<tr>
+				<td rowspan="4" >&#9997;</td>
+			</tr>
+			<tr>
+				<th align="left"><input type="text" placeholder="Name" name="name">
+					<input type="text" placeholder="Email" name="email">
+					<br><br><input type="text" placeholder="Contact" name="contact">
+					<br><br><textarea name="message" placeholder="Message" rows="4" cols="60"></textarea>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="2" align="left"> 
+				<br><input type="radio" name="job" value="partTime" checked>Part-time
+				<input type="radio" name="job" value="fullTime" checked>Full Time</th>
+			</tr>
+			<tr>
+				<th colspan="2" align="right"> <br><input type="Submit" value="SEND"></th>
+			</tr>
+		</table>
+	</form>
+</div>
+<br><br><br><br>
+	<img src="map.jpg" style="width:100%">
+
+</body>
+</html>

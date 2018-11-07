@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>RESUME</title>
+	
+<style>
+{
+    box-sizing: border-box;
+}
+
+body {
+	background: white;
+    font-family: "Lato", Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: right;
+    background-image: url("tum1.jpg");
+    color: #663300;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.row {  
+    display: flex;
+}
+.side {
+    flex: 30%;
+    background-color: #FFB347	;
+    padding: 10px;
+}
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 15px;
+	
+}
+
+
+.img {
+	margin-left:auto;
+	margin-right:auto;
+    background-image: url("A1.jpg");
+    width: 220px;
+    padding: 15px;
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/WELCOME%20PAGE.html">Homepage</a>
+	<a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PROFILE.html">Profile</a>
+	<a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/RESUME.html">Resume</a>
+	<a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/PORTFOLIO.html">Portfolio</a>
+	<a href="file:///C:/Users/acer/Desktop/Individual%20project%20web/CONTACT.html">Contact</a>
+</div>
+
+<div id="main">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+		document.body.style.backgroundColor = "#FFB347";
+	}
+	</script>
+
+	<div class="header">
+	  <br><br><br><br><h1 style="font-family:Bernard MT Condensed;">RESUME</h1>
+	</div>
+
+	<div class="row">
+		<div class="side">
+		<br>
+		<div class="img" style="height:320px;"></div>
+		</div>
+		
+		<div class="main">
+			<br>
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;">WORK EXPERIENCES <hr color="#FF4500"></h2>
+			<table style="width:100%; font-family:TW Cen MT Condensed; font-size:150%;">
+				<tr>
+					<td> 2017 - Panasonic AVC Networks Johor Malaysia Sdn. Bhd.</td>
+				</tr>
+			</table>
+			
+			<br><br>
+			
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;">EDUCATIONS<hr color="#FF4500"></h2>
+			<table style = "width:100%">
+				<tr style="font-family:TW Cen MT Condensed; font-size:150%;">
+					<td> School</td>
+					<td>
+						2005-2010 - Sekolah Kebangsaan Kota Masai <br>
+						2011-2015 - Sekolah Menengah Kebangsaan Kota Masai 2</td>
+				</tr>
+				<tr style="font-family:TW Cen MT Condensed; font-size:150%;">
+					<td> <br>University </td>
+					<td> <br>2016-2019 - Diploma in Computer Science<br>
+							University Teknologi MARA Johor </td>
+				</tr>
+			</table>
+			
+			<br><br>
+			
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;"> COMPUTER SKILLS <hr color="#FF4500"></h2>
+			<table style="width:100%; font-family:TW Cen MT Condensed; font-size:150%;">
+				<tr>
+					<td> Language </td>
+					<td> 
+						<table style="width:54%">
+							<tr>
+								<td>C++</td> <td>&#9733;&#9733;&#9733;&#9733;&#9734; </td>
+							</tr>
+							<tr>
+								<td>Java</td> <td>&#9733;&#9733;&#9733;&#9733;&#9734; </td>
+							</tr>
+							<tr>
+								<td>Scheme</td> <td>&#9733;&#9733;&#9734;&#9734;&#9734; </td>
+							</tr>
+							<tr>
+								<td>Prolog</td> <td>&#9733;&#9733;&#9734;&#9734;&#9734; </td>
+							</tr>
+							<tr>
+								<td>Phyton</td> <td>&#9733;&#9733;&#9734;&#9734;&#9734; </td>
+							</tr>
+							<tr>
+								<td>HTML</td> <td>&#9733;&#9733;&#9733;&#9733;&#9734; </td>
+							</tr>
+							<tr>
+								<td>PHP</td> <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><br>Multimedia</td>
+					<td>
+						<table style="width:35%">
+							<tr>
+								<td><br>Adobe Photoshop</td> <td>&#9733;&#9733;&#9733;&#9734;&#9734; </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td><br>Tools</td>
+					<td><br>MS Office Suite (Word, Powerpoint)</td>
+				</tr>
+			</table>
+			
+			<br><br>
+			
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;"> LANGUAGES <hr color="#FF4500"></h2>
+			<table style="width:53%; font-family:TW Cen MT Condensed; font-size:150%;">
+				<tr>
+					<td> Bahasa Malaysia </td>
+					<td> &#9733;&#9733;&#9733;&#9733;&#9734; </td>
+				</tr>
+				<tr>
+					<td> English </td>
+					<td> &#9733;&#9733;&#9733;&#9733;&#9734; </td>
+				</tr>
+				<tr>
+					<td> Korea </td>
+					<td> &#9733;&#9733;&#9734;&#9734;&#9734; </td>
+				</tr>
+			</table>
+			
+			<br><br>
+			
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;"> PARTICIPATION <hr color="#FF4500"></h2>
+			<table style="width:53%; font-family:TW Cen MT Condensed; font-size:150%;">
+				<tr>
+					<td> 2018 - Competition in creating a Landmark design held by UiTM
+				</tr>
+			</table>
+			
+			<br><br>
+			<h2 style="font-family:TW Cen MT Condensed; color:#FF8C00;"> REFERENCES <hr color="#FF4500"></h2>
+			<ul style="font-family:TW Cen MT Condensed; font-size:150%">
+				<li> Mohd Lezam Bin Lehat 
+					<ul style="list-style-type:none; font-size:100%;">
+						<li>- Lecturer of Web Application Development</li>
+						<li>- Contact: 013-39*-****</li>
+					</ul>
+				</li>
+				<br>
+				<li> Madam Yusnita Binti Sokman 
+					<ul style="list-style-type:none;font-size:100%;">
+						<li>- Coordinator for Faculty of Computer Sciences and Mathematical</li>
+						<li>- Contact: 019-73*-****</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
